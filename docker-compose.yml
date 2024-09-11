@@ -37,11 +37,11 @@ services:
     # Configura as variáveis de ambiente dentro do container
     environment:
       DB_USER: root
-      DB_PASSWORD: password
+      DB_PASSWORD: ''
       DB_HOST: db
       DB_PORT: 3306
       DB_NAME: Trybesmith
-      JWT_SECRET: secret
+      JWT_SECRET: ''
 
   # Serviço que irá rodar o banco de dados
   db:
@@ -54,4 +54,4 @@ services:
       # Expõe a porta padrão do banco de dados
       - 3306:3306
     environment:
-      MYSQL_ROOT_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: ''
